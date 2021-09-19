@@ -1,0 +1,55 @@
+:root {
+  --blue: #3948ef;
+  --blue-shadow: #151b5a;
+  --complementary-blue: #efe039;
+  --complementary-shadow: #77701c;
+  --blue-violet: #8539ef;
+  --deeporchid: #e039ef;
+  --orchid: #ef39a3;
+  --crimson: #ef3948;
+  --coral: #ef8539;
+  --grad-blue-complementary: linear-gradient(to top right,var(--orchid),var(--crimson),var(--coral));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+}
+body {
+  height: 100%;
+  background-image: var(--grad-blue-complementary);
+}
+
+.page--container {
+  position: absolute;
+  width: 90%;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue);
+  box-shadow: 3px 3px 4px 2px rgba(21, 27, 90, 0.4);
+  border: 1px solid white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.page--container > .page__title {
+  background-image: linear-gradient(to right,var(--complementary-blue),#A3EF39,#48EF39,#39EF85);
+  text-align: center;
+  margin-top: 8px;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2rem;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(119, 112, 28, 0.6);
+  border: 1px solid white;
+}
